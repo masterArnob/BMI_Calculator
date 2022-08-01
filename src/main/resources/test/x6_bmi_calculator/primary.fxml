@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="452.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.x6_bmi_calculator.PrimaryController">
+   <children>
+      <Label layoutX="42.0" layoutY="213.0" text="Height (m) :" />
+      <Label layoutX="42.0" layoutY="283.0" text="Weight (kg) :" />
+      <Label layoutX="42.0" layoutY="373.0" text="BMI Value :" />
+      <Label layoutX="112.0" layoutY="88.0" prefHeight="29.0" prefWidth="197.0" text="BMI Calculator">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="Cal" layoutX="185.0" layoutY="326.0" mnemonicParsing="false" onAction="#doCal" text="Calculate" />
+      <Label layoutX="42.0" layoutY="420.0" text="Catagory :" />
+      <Label fx:id="resultBMI" layoutX="121.0" layoutY="373.0" />
+      <Label fx:id="resultCat" layoutX="121.0" layoutY="420.0" />
+      <Label fx:id="Status" layoutX="36.0" layoutY="476.0" prefHeight="9.0" prefWidth="330.0" />
+      <TextField fx:id="height" layoutX="136.0" layoutY="209.0" promptText="Enter Height" />
+      <TextField fx:id="weight" layoutX="136.0" layoutY="279.0" promptText="Enter Weight" />
+   </children>
+</AnchorPane>
